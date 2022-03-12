@@ -8,7 +8,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/Baka632/ArknightsResources</PackageProjectUrl>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <RepositoryUrl>https://dev.azure.com/LiveBakaStudio/_git/ArknightsResources?path=/ArknightsResources.Stories</RepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/LiveBakaStudio/ArknightsResources/_git/ArknightsResources?path=/ArknightsResources.Stories.Resources</RepositoryUrl>
     <Copyright>Copyright (c) 2022 Baka632</Copyright>
     <PackageTags>Arknights</PackageTags>
     <DebugType>embedded</DebugType>
