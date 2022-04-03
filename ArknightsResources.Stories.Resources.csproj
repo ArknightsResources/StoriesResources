@@ -11,11 +11,30 @@
     <RepositoryUrl>https://dev.azure.com/LiveBakaStudio/ArknightsResources/_git/ArknightsResources?path=/ArknightsResources.Stories.Resources</RepositoryUrl>
     <Copyright>Copyright (c) 2022 Baka632</Copyright>
     <PackageTags>Arknights</PackageTags>
-    <DebugType>embedded</DebugType>
+    <DebugType>portable</DebugType>
+	<IncludeSymbols>true</IncludeSymbols>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<EmbedUntrackedSources>true</EmbedUntrackedSources>
+	<PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="StoryReader.cs~RFd2d4c25.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
