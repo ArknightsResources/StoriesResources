@@ -10,13 +10,14 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <RepositoryUrl>https://dev.azure.com/LiveBakaStudio/ArknightsResources/_git/ArknightsResources?path=/ArknightsResources.Stories.Resources</RepositoryUrl>
     <Copyright>Copyright (c) 2022 Baka632</Copyright>
-    <PackageTags>Arknights</PackageTags>
+    <PackageTags>Arknights;明日方舟</PackageTags>
     <DebugType>portable</DebugType>
 	<IncludeSymbols>true</IncludeSymbols>
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<EmbedUntrackedSources>true</EmbedUntrackedSources>
 	<PackageIcon>icon.png</PackageIcon>
+	<Description>Provides resources about Arknights stories</Description>
   </PropertyGroup>
 
   <ItemGroup>
