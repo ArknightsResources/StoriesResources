@@ -39,6 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ArknightsResources.CustomResourceHelpers\ArknightsResources.CustomResourceHelpers.csproj" />
     <ProjectReference Include="..\ArknightsResources.Stories.Models\ArknightsResources.Stories.Models.csproj" />
   </ItemGroup>
 

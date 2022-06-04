@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArknightsResources.CustomResourceHelpers;
+using System;
 using System.Globalization;
 using StoryResources = ArknightsResources.Stories.Resources.Properties.Resources;
 
@@ -7,16 +8,16 @@ namespace ArknightsResources.Stories.Resources
     /// <summary>
     /// 为ArknightsResources.Stories.Resources的资源访问提供帮助的类
     /// </summary>
-    public static class ResourceHelper
+    public class ResourceHelper : StoryResourceHelper
     {
         /// <summary>
-        /// 通过剧情文件的代号获取该剧情的原始剧情文本
+        /// <seealso cref="ResourceHelper"/>的实例
         /// </summary>
-        /// <param name="codename">剧情文件的代号</param>
-        /// <param name="cultureInfo"></param>
-        /// <returns>原始剧情文本</returns>
+        public static readonly ResourceHelper Instance = new ResourceHelper();
+
+        /// <inheritdoc/>
         /// <exception cref="ArgumentException"></exception>
-        public static string GetStoryText(string codename, CultureInfo cultureInfo)
+        public override string GetStoryText(string codename, CultureInfo cultureInfo)
         {
             if (string.IsNullOrWhiteSpace(codename))
             {
