@@ -18,6 +18,7 @@
 	<EmbedUntrackedSources>true</EmbedUntrackedSources>
 	<PackageIcon>icon.png</PackageIcon>
 	<Description>Provides resources about Arknights stories</Description>
+	<Authors>Baka632</Authors>
   </PropertyGroup>
 
   <ItemGroup>
