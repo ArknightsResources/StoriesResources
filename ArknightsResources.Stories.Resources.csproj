@@ -7,27 +7,21 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/Baka632/ArknightsResources</PackageProjectUrl>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <RepositoryUrl>https://dev.azure.com/LiveBakaStudio/ArknightsResources/_git/ArknightsResources?path=/ArknightsResources.Stories.Resources</RepositoryUrl>
     <Copyright>Copyright (c) 2022 Baka632</Copyright>
     <PackageTags>Arknights;明日方舟</PackageTags>
-    <DebugType>portable</DebugType>
-    <IncludeSymbols>False</IncludeSymbols>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <PackageIcon>icon.png</PackageIcon>
     <Description>Provides resources about Arknights stories</Description>
     <IsTrimmable>true</IsTrimmable>
     <Authors>Baka632</Authors>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
+   <PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
+       <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\icon.png">
