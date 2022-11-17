@@ -8,16 +8,25 @@ namespace ArknightsResources.Stories.Resources
     /// <summary>
     /// 为ArknightsResources.Stories.Resources的资源访问提供帮助的类
     /// </summary>
+#if NET7_0_OR_GREATER
+    public class ResourceHelper : IStoryResourceHelper
+    {
+#else
     public class ResourceHelper : StoryResourceHelper
     {
         /// <summary>
         /// <seealso cref="ResourceHelper"/>的实例
         /// </summary>
         public static readonly ResourceHelper Instance = new ResourceHelper();
+#endif
 
         /// <inheritdoc/>
         /// <exception cref="ArgumentException"></exception>
-        public override string GetStoryText(string codename, CultureInfo cultureInfo)
+#if NET7_0_OR_GREATER
+        public static string GetStoryText(string codename, CultureInfo cultureInfo)
+#else
+        public override string GetStoryRawText(string codename, CultureInfo cultureInfo)
+#endif
         {
             if (string.IsNullOrWhiteSpace(codename))
             {
