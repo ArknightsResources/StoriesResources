@@ -6,8 +6,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl>https://github.com/Baka632/ArknightsResources</PackageProjectUrl>
-    <RepositoryUrl>https://dev.azure.com/LiveBakaStudio/ArknightsResources/_git/ArknightsResources?path=/ArknightsResources.Stories.Resources</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ArknightsResources/Home</PackageProjectUrl>
     <Copyright>Copyright (c) 2022 Baka632</Copyright>
     <PackageTags>Arknights;明日方舟</PackageTags>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
