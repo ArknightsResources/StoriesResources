@@ -1,6 +1,7 @@
 ﻿using ArknightsResources.CustomResourceHelpers;
 using System;
 using System.Globalization;
+using System.Text;
 using StoryResources = ArknightsResources.Stories.Resources.Properties.Resources;
 
 namespace ArknightsResources.Stories.Resources
@@ -21,7 +22,7 @@ namespace ArknightsResources.Stories.Resources
 #endif
 
         /// <inheritdoc/>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException"/>
 #if NET7_0_OR_GREATER
         public static string GetStoryText(string codename, CultureInfo cultureInfo)
 #else
@@ -35,12 +36,43 @@ namespace ArknightsResources.Stories.Resources
 
             try
             {
-                string text = StoryResources.ResourceManager.GetString(codename, cultureInfo);
+                byte[] textArray = StoryResources.ResourceManager.GetObject(codename, cultureInfo) as byte[];
+                string text = Encoding.UTF8.GetString(textArray);
                 return text;
             }
             catch (Exception ex)
             {
-                throw new ArgumentException($"使用给定的参数\"{codename}\"时找不到资源", ex);
+                throw new ArgumentException($"使用给定的参数\"{codename}\"查找资源时出错", ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        /// <exception cref="ArgumentException"/>
+#if NET7_0_OR_GREATER
+        public static byte[] GetVideo(string codename)
+#else
+        public override byte[] GetVideo(string codename)
+#endif
+        {
+            if (string.IsNullOrWhiteSpace(codename))
+            {
+                throw new ArgumentException($"“{nameof(codename)}”不能为 null 或空白。", nameof(codename));
+            }
+
+            try
+            {
+                byte[] videoArray = StoryResources.ResourceManager.GetObject(codename) as byte[];
+
+                if (videoArray is null)
+                {
+                    throw new ArgumentException("找不到资源");
+                }
+
+                return videoArray;
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException($"使用给定的参数\"{codename}\"查找资源时出错", ex);
             }
         }
     }
