@@ -63,29 +63,9 @@ namespace ArknightsResources.Stories.Resources.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        public static byte[] video_event_ic01 {
-            get {
-                object obj = ResourceManager.GetObject("video_event_ic01", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Byte[] 类型的本地化资源。
-        /// </summary>
         public static byte[] video_event_iw_beg {
             get {
                 object obj = ResourceManager.GetObject("video_event_iw_beg", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Byte[] 类型的本地化资源。
-        /// </summary>
-        public static byte[] video_main_10_enter {
-            get {
-                object obj = ResourceManager.GetObject("video_main_10_enter", resourceCulture);
                 return ((byte[])(obj));
             }
         }

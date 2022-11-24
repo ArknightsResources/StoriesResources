@@ -127,4 +127,13 @@
   <data name="story_event_whoisreal_8_end" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\story\zh_cn\story_event_whoisreal_8_end.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="video_event_ic01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\video\zh_cn\video_event_ic01.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="video_main_10_enter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\video\zh_cn\video_main_10_enter.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="video_main_11_enter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\video\zh_cn\video_main_11_enter.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

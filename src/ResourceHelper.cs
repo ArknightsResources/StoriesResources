@@ -36,8 +36,7 @@ namespace ArknightsResources.Stories.Resources
 
             try
             {
-                byte[] textArray = StoryResources.ResourceManager.GetObject(codename, cultureInfo) as byte[];
-                string text = Encoding.UTF8.GetString(textArray);
+                string text = StoryResources.ResourceManager.GetString(codename, cultureInfo);
                 return text;
             }
             catch (Exception ex)
@@ -49,9 +48,9 @@ namespace ArknightsResources.Stories.Resources
         /// <inheritdoc/>
         /// <exception cref="ArgumentException"/>
 #if NET7_0_OR_GREATER
-        public static byte[] GetVideo(string codename)
+        public static byte[] GetVideo(string codename, CultureInfo cultureInfo = null)
 #else
-        public override byte[] GetVideo(string codename)
+        public override byte[] GetVideo(string codename, CultureInfo cultureInfo = null)
 #endif
         {
             if (string.IsNullOrWhiteSpace(codename))
@@ -61,7 +60,15 @@ namespace ArknightsResources.Stories.Resources
 
             try
             {
-                byte[] videoArray = StoryResources.ResourceManager.GetObject(codename) as byte[];
+                byte[] videoArray;
+                if (cultureInfo is null)
+                {
+                    videoArray = StoryResources.ResourceManager.GetObject(codename) as byte[];
+                }
+                else
+                {
+                    videoArray = StoryResources.ResourceManager.GetObject(codename, cultureInfo) as byte[];
+                }
 
                 if (videoArray is null)
                 {

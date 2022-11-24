@@ -118,14 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="video_event_ic01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\video\video_event_ic01.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="video_event_iw_beg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\video\video_event_iw_beg.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="video_main_10_enter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\video\video_main_10_enter.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="video_main_8_16_end" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\video\video_main_8-16_end.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
