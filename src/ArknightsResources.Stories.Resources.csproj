@@ -15,10 +15,12 @@
     <Description>Provides resources about Arknights stories</Description>
     <IsTrimmable>true</IsTrimmable>
     <Authors>Baka632</Authors>
-    <DebugType>embedded</DebugType>
     <Version>0.2.0.0-alpha</Version>
     <AssemblyVersion>0.2.0.0</AssemblyVersion>
     <FileVersion>0.2.0.0</FileVersion>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugType>portable</DebugType>
   </PropertyGroup>
 
    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
